@@ -37,7 +37,7 @@
     <target name="compile" depends="init">
         <echo message="Compiling with JVM Version ${java.version}"/>
         <!-- Compile the java code from ${src} into ${build} -->
-        <javac srcdir="${src}" target="1.1" source="1.2" destdir="${build}" optimize="false" debug="on" includeantruntime="false"/>
+        <javac srcdir="${src}" target="1.8" source="1.8" destdir="${build}" optimize="false" debug="on" includeantruntime="false"/>
         <copy file="application.properties" todir="${build}" overwrite="true"/>
         <!--
             == Add on the build specific info...
